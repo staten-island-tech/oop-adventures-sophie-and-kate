@@ -1,18 +1,5 @@
-class human:
-    attr1="hair color"
-    attr2="hair"
-    attr3="physique"
-    attr4="skin"
-    attr5="personaility"
 
-class Mhair:
-    Fade=200
-    Edgar=100
-    Buzz=70
-    Fluffy=80
-    Dreads=70
-
-class Fhair:
+""" class Fhair:
     Straight=150
     Curly=70
     Layered=100
@@ -24,5 +11,25 @@ class Mphysique:
     DadBod=40
     Skinny=150
     Overweight=20
-    BodyBuilder=150
+    BodyBuilder=150 """
 
+
+##class human
+
+##class male companion
+##class female companion
+
+##desired person class
+question=input('choose your dream hairstyle:(a:fade, b:edgar, c:buzz, d:fluffy, e:dreads)')
+if question==('a'):
+        print('Fade=200')
+if question==('b'):
+        print('Edgar=100')
+if question==('c'):
+        print('Buzz=70')
+if question==('d'):
+        print('Fluffy=80')
+if question==('e'):
+        print('Dreads=70')
+
+##compare person to pre-created companions 

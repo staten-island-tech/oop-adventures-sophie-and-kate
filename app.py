@@ -1,17 +1,11 @@
 
-""" class Fhair:
+class Fhair:
     Straight=150
     Curly=70
     Layered=100
     Wavy=100
     Braids=120 
 
-class Mphysique:
-    Muscular=200
-    DadBod=40
-    Skinny=150
-    Overweight=20
-    BodyBuilder=150 """
 
 def add(x,y):
         return x + y
@@ -21,19 +15,45 @@ def add(x,y):
 ##class female companion
 
 ##desired person class
-def(male_hair):
+def get_male_hair(male_hair):
+        question=input('choose your dream hairstyle:(a:fade, b:edgar, c:buzz, d:fluffy, e:dreads)')
+        if question==('a'):
+                print('Fade=200')
+        if question==('b'):
+                print('Edgar=100')
+        if question==('c'):
+                print('Buzz=70')
+        if question==('d'):
+                print('Fluffy=80')
+        if question==('e'):
+                print('Dreads=70')
 
-question=input('choose your dream hairstyle:(a:fade, b:edgar, c:buzz, d:fluffy, e:dreads)')
+
+def=male_physique
+question=input('choose your dream physique:(a:muscular, b:dad bod, c:skinny, d:overweight, e:body builder)')
 if question==('a'):
-        print('Fade=200')
+        print('Muscular=200')
 if question==('b'):
-        print('Edgar=100')
+        print('DadBod=40')
 if question==('c'):
-        print('Buzz=70')
+        print('Skinny=150')
 if question==('d'):
-        print('Fluffy=80')
+        print('Overweight=20')
 if question==('e'):
-        print('Dreads=70')
+        print('BodyBuilder=150')
 
 
-##compare person to pre-created companions 
+def=male_physique
+question=input('choose your dream personality:(a:sigma, b:alpha, c:omega, d:npc, e:sassy)')
+if question==('a'):
+        print('Sigma=200')
+if question==('b'):
+        print('Alpha=215 ')
+if question==('c'):
+        print('Omega=50')
+if question==('d'):
+        print('NPC=3')
+if question==('e'):
+        print('Sassy=25')
+
+##compare person to pre-created companions  

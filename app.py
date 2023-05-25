@@ -15,6 +15,27 @@ def add(x,y):
 ##class female companion
 
 ##desired woman class
+def make_woman():
+        get_female_hair()
+        get_female_physique()
+        get_female_personality()
+        get_female_hair_color()
+def make_man():
+        get_male_hair()
+        get_male_physique()
+        get_male_physique()
+        get_male_hair_color()
+
+def choose_gender():
+        question=input("what is your prefered gender?(male or female)")
+        if question==('female'):
+                make_woman
+        elif question==('male'):
+                make_man
+        elif question != ('male'or 'female'):
+                print('you made an error!')
+                choose_gender()
+choose_gender()
 create_dream_woman=[]
 def get_female_hair(female_hair):
         question=input('choose your dream hairstyle:(a:straight, b:curly, c:layered, d:wavy, e:braids)')
@@ -28,7 +49,9 @@ def get_female_hair(female_hair):
                 create_dream_woman.append('Wavy=100')
         elif question==('e'):
                 create_dream_woman.append('Braids=120')
-
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_female_hair(female_hair)   
 
 def get_female_physique(female_physique):
         question=input('choose your dream physique:(a:curvy, b:skinny, c:muscular, d:slim thick, e:average)')
@@ -42,6 +65,9 @@ def get_female_physique(female_physique):
                 create_dream_woman.append('Slim Thick=200')
         elif question==('e'):
                 create_dream_woman.append('Average=75')
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_female_physique(female_physique)   
 
 
 def get_female_personality(female_personality):
@@ -56,7 +82,9 @@ def get_female_personality(female_personality):
                 create_dream_woman.append('Wifey=215')
         elif question==('e'):
                 create_dream_woman.append('Angry=20')
-
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_female_personality(female_personality)   
 
 def get_female_hair_color(female_hair_color):
         question=input('choose your dream hair color:(a:dirty blond, b:blond, c:black, d:brunette, e:ginger)')
@@ -70,6 +98,10 @@ def get_female_hair_color(female_hair_color):
                 create_dream_woman.append('Brunette=70')
         elif question==('e'):
                 create_dream_woman.append('Ginger=20')
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_female_hair_color(female_hair_color)   
+
 get_female_hair(1)
 get_female_physique(1)
 get_female_personality(1)
@@ -92,7 +124,9 @@ def get_male_hair(male_hair):
                  create_dream_man.append('Fluffy=80')
         elif question==('e'):
                 create_dream_man.append('Dreads=70')
-
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_male_hair(male_hair)   
 
 def get_male_physique(male_physique):
         question=input('choose your dream physique:(a:muscular, b:dad bod, c:skinny, d:overweight, e:body builder)')
@@ -106,7 +140,9 @@ def get_male_physique(male_physique):
                 create_dream_man.append('Overweight=20')
         elif question==('e'):
                 create_dream_man.append('BodyBuilder=150')
-
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_male_physique(male_physique) 
 
 def get_male_personality(male_personality):
         question=input('choose your dream personality:(a:sigma, b:alpha, c:omega, d:npc, e:sassy)')
@@ -120,6 +156,9 @@ def get_male_personality(male_personality):
                 create_dream_man.append('NPC=3')
         elif question==('e'):
                 create_dream_man.append('Sassy=25')
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_male_personality(male_personality) 
 
 
 def get_male_hair_color(male_hair_color):
@@ -134,6 +173,9 @@ def get_male_hair_color(male_hair_color):
                 create_dream_man.append('Brunette=70')
         elif question==('e'):
                 create_dream_man.append('Ginger=20')
+        elif question != ('a','b','c','d', 'e'):
+              print('you made an error!')
+              get_male_hair_color(male_hair_color) 
 
 get_male_hair(1)
 get_male_physique(1)

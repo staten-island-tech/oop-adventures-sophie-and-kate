@@ -15,27 +15,7 @@ def add(x,y):
 ##class female companion
 
 ##desired woman class
-def make_woman():
-        get_female_hair()
-        get_female_physique()
-        get_female_personality()
-        get_female_hair_color()
-def make_man():
-        get_male_hair()
-        get_male_physique()
-        get_male_physique()
-        get_male_hair_color()
 
-def choose_gender():
-        question=input("what is your prefered gender?(male or female)")
-        if question==('female'):
-                make_woman
-        elif question==('male'):
-                make_man
-        elif question != ('male'or 'female'):
-                print('you made an error!')
-                choose_gender()
-choose_gender()
 create_dream_woman=[]
 def get_female_hair(female_hair):
         question=input('choose your dream hairstyle:(a:straight, b:curly, c:layered, d:wavy, e:braids)')
@@ -101,12 +81,6 @@ def get_female_hair_color(female_hair_color):
         elif question != ('a','b','c','d', 'e'):
               print('you made an error!')
               get_female_hair_color(female_hair_color)   
-
-get_female_hair(1)
-get_female_physique(1)
-get_female_personality(1)
-get_female_hair_color(1)
-print(create_dream_woman)
 
 
 ##desired man person class
@@ -176,10 +150,27 @@ def get_male_hair_color(male_hair_color):
         elif question != ('a','b','c','d', 'e'):
               print('you made an error!')
               get_male_hair_color(male_hair_color) 
+def make_woman():
+        get_female_hair(1)
+        get_female_physique(1)
+        get_female_personality(1)
+        get_female_hair_color(1)
+def make_man():
+        get_male_hair(1)
+        get_male_physique(1)
+        get_male_physique(1)
+        get_male_hair_color(1)
 
-get_male_hair(1)
-get_male_physique(1)
-get_male_personality(1)
-get_male_hair_color(1)
-print(create_dream_man)
+def choose_gender():
+        question=input("what is your prefered gender?(male or female)")
+        if question==('female'):
+                make_woman()
+                print(create_dream_woman)
+        elif question==('male'):
+                make_man()
+                print(create_dream_man)
+        else:
+                print('you made an error!')
+                choose_gender()
+choose_gender()
 ##compare person to pre-created companions  

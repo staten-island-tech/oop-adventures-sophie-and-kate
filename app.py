@@ -1,19 +1,23 @@
+from classes_man import woman, man
+##woman options
+Ella=woman('dirty blond','straight','baddie','muscular')
+Anna=woman('ginger','braids','submissive','curvy')
+Layla=woman('brunette','wavy','wifey','skinny')
+Chanel=woman('black','layered','angry','slim thick')
+Olivia=woman('blond','curly','independant','average')
+women=[Ella, Anna, Layla, Chanel, Olivia]
 
-class Fhair:
-    Straight=150
-    Curly=70
-    Layered=100
-    Wavy=100
-    Braids=120 
+##men options
+Xavier=man('black','dreads','alpha','bodybuilder')
+Phil=man('ginger','buzz','omega','dad bod')
+John=man('dirty blond', 'fluffy','sigma','muscular')
+Eric=man('brunette','fade','NPC','overweight')
+Juan=man('blond','edgar','sassy','skinny')
+men=[Xavier, Phil, John, Eric, Juan]
 
-
-
-##class human
-
-##class male companion
-##class female companion
-
-##desired woman class
+##compare person to pre-created companions  
+for x in men:
+        print(x.Hcolor)
 
 create_dream_woman=[]
 def get_female_hair(female_hair):
@@ -172,4 +176,4 @@ def choose_gender():
                 print('you made an error!')
                 choose_gender()
 choose_gender()
-##compare person to pre-created companions  
+

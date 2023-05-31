@@ -1,23 +1,4 @@
 from classes_man import woman, man
-##woman options
-Ella=woman('dirty blond','straight','baddie','muscular')
-Anna=woman('ginger','braids','submissive','curvy')
-Layla=woman('brunette','wavy','wifey','skinny')
-Chanel=woman('black','layered','angry','slim thick')
-Olivia=woman('blond','curly','independant','average')
-women=[Ella, Anna, Layla, Chanel, Olivia]
-
-##men options
-Xavier=man('black','dreads','alpha','bodybuilder')
-Phil=man('ginger','buzz','omega','dad bod')
-John=man('dirty blond', 'fluffy','sigma','muscular')
-Eric=man('brunette','fade','NPC','overweight')
-Juan=man('blond','edgar','sassy','skinny')
-men=[Xavier, Phil, John, Eric, Juan]
-
-##compare person to pre-created companions  
-for x in men:
-        print(x.Hcolor)
 
 create_dream_woman=[]
 def get_female_hair(female_hair):
@@ -177,3 +158,55 @@ def choose_gender():
                 choose_gender()
 choose_gender()
 
+##woman options
+Ella=woman('dirty blond','straight','baddie','muscular')
+Anna=woman('ginger','braids','submissive','curvy')
+Layla=woman('brunette','wavy','wifey','skinny')
+Chanel=woman('black','layered','angry','slim thick')
+Olivia=woman('blond','curly','independant','average')
+women=[Ella, Anna, Layla, Chanel, Olivia]
+
+##men options
+Xavier=man('black','dreads','alpha','bodybuilder')
+Phil=man('ginger','buzz','omega','dad bod')
+John=man('dirty blond', 'fluffy','sigma','muscular')
+Eric=man('brunette','fade','NPC','overweight')
+Juan=man('blond','edgar','sassy','skinny')
+men=[Xavier, Phil, John, Eric, Juan]
+
+##compare person to pre-created companions  
+
+
+#score
+#current_top_candidate
+score = 0
+def compare_candidates():
+        if choose_gender==('male'):
+                print('male worked')
+                for x in men:
+                        print('men worked')
+                        for y in create_dream_man:
+                                print('dreamy worked')
+                                if create_dream_man[0] in Xavier[0]:
+                                        score+=1
+                                        print(score)
+compare_candidates()
+                                ## compare
+                                ## track the score and current score
+                                ## create a global variable for current top comparison
+                                ## change comparison based on score
+                                ## compare current candidate with top
+                                ## if score > current score, replace
+"""        elif choose_gender==('female'):
+                for x in women:
+                        for y in create_dream_woman:
+                                ## compare
+                                ## track the score and current score
+                                ## create a global variable for current top comparison
+                                ## change comparison based on score
+                                ## compare current candidate with top
+                                ## if score > current score, replace
+        else:
+                print('you made an error!')
+                compare_candidates()
+ """

@@ -153,7 +153,7 @@ def choose_gender():
                 return "female"
         elif question==('male'):
                 make_man()
-                print(create_dream_man)
+                
                 return "male"
         else:
                 print('you made an error!')
@@ -167,11 +167,11 @@ Chanel=woman('black','layered','angry','slim thick')
 Olivia=woman('blond','curly','independant','average')
 women=[Ella, Anna, Layla, Chanel, Olivia]
 ##men options
-Xavier=man('Dreads','BodyBuilder','Alpha','Black')
-Phil=man('Buzz','DadBod','Omega','Ginger')
-John=man('Fulffy', 'Muscular','Sigma','DirtyBlond')
-Eric=man('Fade','OverWeight','NPC','Brunette')
-Juan=man('Edgar','Skinny','Sassy','Blond')
+Xavier=man('Dreads','BodyBuilder','Alpha','Black','Xavier')
+Phil=man('Buzz','DadBod','Omega','Ginger','Phil')
+John=man('Fulffy', 'Muscular','Sigma','DirtyBlond','John')
+Eric=man('Fade','OverWeight','NPC','Brunette','Eric')
+Juan=man('Edgar','Skinny','Sassy','Blond','Juan')
 men=[Xavier, Phil, John, Eric, Juan]
 ##compare person to pre-created companions  
 
@@ -179,17 +179,23 @@ men=[Xavier, Phil, John, Eric, Juan]
 #current_top_candidate
 score = 0
 def compare_candidates(x):
-        top_cand = {}
-        current_cand = {}
+        print(create_dream_man[0])
+        print(create_dream_man[1])
+        print(create_dream_man[2])
+        print(create_dream_man[3])
         for man in men: 
                 if man.Hstyle == create_dream_man[0]: 
+                        print(man.name)
                         man.set_score()
                 if man.physique == create_dream_man[1]:
-                         man.set_score()
-                if man.personaility == create_dream_man[2]:
-                         man.set_score()
+                        print(man.name)
+                        man.set_score()
+                if man.personality == create_dream_man[2]:
+                        print(man.name)
+                        man.set_score() 
                 if man.Hcolor == create_dream_man[3]:
-                         man.set_score()
+                        print(man.name)
+                        man.set_score()
                                 
 compare_candidates(x)
 

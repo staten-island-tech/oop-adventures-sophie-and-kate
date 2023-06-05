@@ -166,35 +166,39 @@ Layla=woman('brunette','wavy','wifey','skinny')
 Chanel=woman('black','layered','angry','slim thick')
 Olivia=woman('blond','curly','independant','average')
 women=[Ella, Anna, Layla, Chanel, Olivia]
-print('women are done')
 ##men options
-Xavier=man('dreads','body builder','alpha','black')
-Phil=man('buzz','dad bod','omega','ginger')
-John=man('fulffy', 'muscular','sigma','dirty blond')
-Eric=man('fade','over weight','NPC','brunette')
-Juan=man('edgar','skinny','sassy','blond')
+Xavier=man('Dreads','BodyBuilder','Alpha','Black')
+Phil=man('Buzz','DadBod','Omega','Ginger')
+John=man('Fulffy', 'Muscular','Sigma','DirtyBlond')
+Eric=man('Fade','OverWeight','NPC','Brunette')
+Juan=man('Edgar','Skinny','Sassy','Blond')
 men=[Xavier, Phil, John, Eric, Juan]
-print('men are done')
 ##compare person to pre-created companions  
-
 
 #score
 #current_top_candidate
 score = 0
 def compare_candidates(x):
-        score = 0
-        if x ==('male'):
-                print('male worked')
-                for x in men:
-                        
-                        for y in create_dream_man:
-                                print('dreamy worked')
-                                print(create_dream_man)
-                                print(x.Hcolor)
-                                if y[0] == x.Hcolor:
-                                        score+=1
-                                        print(score)
+        top_cand = {}
+        current_cand = {}
+        for man in men: 
+                if man.Hstyle == create_dream_man[0]: 
+                        man.set_score()
+                if man.physique == create_dream_man[1]:
+                         man.set_score()
+                if man.personaility == create_dream_man[2]:
+                         man.set_score()
+                if man.Hcolor == create_dream_man[3]:
+                         man.set_score()
+                                
 compare_candidates(x)
+
+
+
+                                       #call class function to increase character score 
+                                      
+                                        
+
                                 ## compare
                                 ## track the score and current score
                                 ## create a global variable for current top comparison

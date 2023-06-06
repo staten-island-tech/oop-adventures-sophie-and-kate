@@ -122,7 +122,7 @@ def get_male_personality(male_personality):
 def get_male_hair_color(male_hair_color):
         question=input('choose your dream hair color:(a:dirty blond, b:blond, c:black, d:brunette, e:ginger)')
         if question==('a'):
-                create_dream_man.append('Dirty Blond')
+                create_dream_man.append('DirtyBlond')
         elif question==('b'):
                 create_dream_man.append('Blond')
         elif question==('c'):
@@ -160,16 +160,16 @@ def choose_gender():
                 choose_gender()
 x = choose_gender()
 ##woman options
-Ella=woman('dirty blond','straight','baddie','muscular')
-Anna=woman('ginger','braids','submissive','curvy')
-Layla=woman('brunette','wavy','wifey','skinny')
-Chanel=woman('black','layered','angry','slim thick')
-Olivia=woman('blond','curly','independant','average')
+Ella=woman('DirtyBlond','Straight','Baddie','Muscular')
+Anna=woman('Ginger','Braids','Submissive','Curvy')
+Layla=woman('Brunette','Wavy','Wifey','Skinny')
+Chanel=woman('Black','Layered','Angry','Slim Thick')
+Olivia=woman('Blond','Curly','Independant','Average')
 women=[Ella, Anna, Layla, Chanel, Olivia]
 ##men options
 Xavier=man('Dreads','BodyBuilder','Alpha','Black','Xavier')
 Phil=man('Buzz','DadBod','Omega','Ginger','Phil')
-John=man('Fulffy', 'Muscular','Sigma','DirtyBlond','John')
+John=man('Fluffy', 'Muscular','Sigma','DirtyBlond','John')
 Eric=man('Fade','OverWeight','NPC','Brunette','Eric')
 Juan=man('Edgar','Skinny','Sassy','Blond','Juan')
 men=[Xavier, Phil, John, Eric, Juan]
@@ -185,18 +185,22 @@ def compare_candidates(x):
         print(create_dream_man[3])
         for man in men: 
                 if man.Hstyle == create_dream_man[0]: 
-                        print(man.name)
+                        print(man.name, create_dream_man[0])
                         man.set_score()
+                        print(man.get_score())
                 if man.physique == create_dream_man[1]:
-                        print(man.name)
+                        print(man.name, create_dream_man[1])
                         man.set_score()
+                        print(man.get_score())
                 if man.personality == create_dream_man[2]:
-                        print(man.name)
+                        print(man.name, create_dream_man[2])
                         man.set_score() 
+                        print(man.get_score())
                 if man.Hcolor == create_dream_man[3]:
-                        print(man.name)
+                        print(man.name, create_dream_man[3])
                         man.set_score()
-                                
+                        print(man.get_score())
+                
 compare_candidates(x)
 
 

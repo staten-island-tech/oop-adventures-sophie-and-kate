@@ -26,7 +26,7 @@ def get_female_physique(female_physique):
         elif question==('c'):
                 create_dream_woman.append('Muscular')
         elif question==('d'):
-                create_dream_woman.append('Slim Thick')
+                create_dream_woman.append('SlimThick')
         elif question==('e'):
                 create_dream_woman.append('Average')
         elif question != ('a','b','c','d', 'e'):
@@ -53,7 +53,7 @@ def get_female_personality(female_personality):
 def get_female_hair_color(female_hair_color):
         question=input('choose your dream hair color:(a:dirty blond, b:blond, c:black, d:brunette, e:ginger)')
         if question==('a'):
-                create_dream_woman.append('Dirty Blond')
+                create_dream_woman.append('DirtyBlond')
         elif question==('b'):
                 create_dream_woman.append('Blond')
         elif question==('c'):
@@ -95,7 +95,7 @@ def get_male_physique(male_physique):
         elif question==('c'):
                 create_dream_man.append('Skinny')
         elif question==('d'):
-                create_dream_man.append('Overweight')
+                create_dream_man.append('OverWeight')
         elif question==('e'):
                 create_dream_man.append('BodyBuilder')
         elif question != ('a','b','c','d', 'e'):
@@ -204,17 +204,16 @@ def compare_candidates(x):
 compare_candidates(x)
 
 
+def find_top_candidate():
+        top_candidate=men[0]
+        for man in men: 
+                if man.get_score() > top_candidate.get_score():
+                       
+                        top_candidate=man
+                        print (f"your dream man is {man.name}")
+find_top_candidate() 
 
-                                       #call class function to increase character score 
-                                      
-                                        
-
-                                ## compare
-                                ## track the score and current score
-                                ## create a global variable for current top comparison
-                                ## change comparison based on score
-                                ## compare current candidate with top
-                                ## if score > current score, replace
+                                     
 """        elif choose_gender==('female'):
                 for x in women:
                         for y in create_dream_woman:
